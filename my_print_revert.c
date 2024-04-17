@@ -12,9 +12,3 @@ void my_print_revert(char *toRevert)
         print_char(toRevert[i]);
     }    
 }
-
-int main(void)
- {
-    my_print_revert("codingclub");
-    return 0;
- }
