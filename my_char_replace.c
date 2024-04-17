@@ -5,20 +5,15 @@ char *my_char_replace(char *origin, char toFind, char toReplace)
     int iter = 0;
     while (origin[iter] != '\0')
     {    
+         if (origin[iter] == toFind)
+        {
+            origin[iter]=toReplace;
+        }
         iter++;
     }
-    for (int i = 0; i <= iter; i++)
-    {
-        
-        if (origin[i] == toFind)
-        {
-            print_char(toReplace);
-        }
-        else
-        {
-            print_char(origin[i]);
-        }
-    }
+    return origin;
+       
+    
 }
 
  #include <stdio.h>
